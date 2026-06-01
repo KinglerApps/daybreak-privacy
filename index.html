@@ -1,48 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daybreak – Privacy Policy</title>
-  <style>
-    body { font-family: -apple-system, Segoe UI, Roboto, sans-serif; line-height: 1.6; max-width: 720px; margin: 40px auto; padding: 0 20px; color: #222; }
-    h1 { border-bottom: 2px solid #f5a623; padding-bottom: 8px; }
-    h2 { margin-top: 32px; }
-    a { color: #c77700; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#1a1424">
+<title>Daybreak – Privacy Policy</title>
+<style>
+  :root{
+    --bg:#14101c;
+    --card:#1d1828;
+    --ink:#ece8f1;
+    --muted:#a59fb4;
+    --line:#2c2738;
+    --sun1:#ffb347;
+    --sun2:#ff7e5f;
+    --accent:#ffb347;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-text-size-adjust:100%;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:var(--bg);
+    color:var(--ink);
+    line-height:1.65;
+    font-size:17px;
+    -webkit-font-smoothing:antialiased;
+    padding-bottom:64px;
+  }
+  .hero{
+    position:relative;
+    padding:56px 22px 40px;
+    text-align:center;
+    overflow:hidden;
+    background:
+      radial-gradient(120% 90% at 50% 0%, rgba(255,126,95,.28), transparent 60%),
+      radial-gradient(80% 60% at 50% 10%, rgba(255,179,71,.22), transparent 70%);
+  }
+  .sun{
+    width:64px;height:64px;margin:0 auto 18px;
+    border-radius:50%;
+    background:linear-gradient(160deg,var(--sun1),var(--sun2));
+    box-shadow:0 0 0 8px rgba(255,179,71,.10),0 0 36px rgba(255,126,95,.55);
+  }
+  .hero h1{font-size:27px;font-weight:700;letter-spacing:-.02em;margin-bottom:8px;}
+  .hero .sub{color:var(--muted);font-size:15px;}
+  .badge{
+    display:inline-block;margin-top:16px;
+    font-size:12.5px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;
+    color:#14101c;background:linear-gradient(160deg,var(--sun1),var(--sun2));
+    padding:6px 14px;border-radius:999px;
+  }
+  main{max-width:680px;margin:0 auto;padding:8px 18px 0;}
+  .updated{text-align:center;color:var(--muted);font-size:13.5px;margin:18px 0 28px;}
+  .intro{
+    background:var(--card);border:1px solid var(--line);border-radius:16px;
+    padding:20px;margin-bottom:14px;font-size:16px;color:#d6d1e0;
+  }
+  .intro strong{color:var(--ink);}
+  .keypoints{
+    background:linear-gradient(160deg, rgba(255,179,71,.12), rgba(255,126,95,.06));
+    border:1px solid rgba(255,179,71,.30);
+    border-radius:16px;padding:20px;margin-bottom:14px;
+  }
+  .keypoints h2{font-size:15px;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);margin-bottom:14px;}
+  .keypoints ul{list-style:none;display:flex;flex-direction:column;gap:12px;}
+  .keypoints li{display:flex;gap:12px;align-items:flex-start;font-size:15.5px;color:#e3dfec;}
+  .keypoints li .ic{flex:0 0 auto;font-size:18px;line-height:1.4;}
+  section{
+    background:var(--card);border:1px solid var(--line);border-radius:16px;
+    padding:22px 20px;margin-bottom:14px;
+  }
+  section h2{
+    font-size:18px;font-weight:700;letter-spacing:-.01em;margin-bottom:12px;
+    display:flex;align-items:center;gap:10px;
+  }
+  section h2::before{
+    content:"";width:8px;height:8px;border-radius:50%;
+    background:linear-gradient(160deg,var(--sun1),var(--sun2));flex:0 0 auto;
+  }
+  section p{color:#cdc8d8;margin-bottom:12px;}
+  section p:last-child{margin-bottom:0;}
+  ul.perm{list-style:none;display:flex;flex-direction:column;gap:14px;}
+  ul.perm li{
+    background:#231d31;border:1px solid var(--line);
+    border-radius:12px;padding:14px 16px;
+  }
+  ul.perm li .t{display:block;font-weight:650;color:var(--ink);margin-bottom:4px;font-size:15.5px;}
+  ul.perm li .d{color:var(--muted);font-size:15px;}
+  a{color:var(--accent);text-decoration:none;word-break:break-word;}
+  a:active{opacity:.7;}
+  .pill{
+    display:inline-flex;align-items:center;gap:8px;
+    background:#231d31;border:1px solid var(--line);
+    border-radius:12px;padding:12px 16px;margin-top:4px;
+    font-weight:600;color:var(--ink);
+  }
+  footer{text-align:center;color:var(--muted);font-size:13px;margin-top:26px;padding:0 18px;}
+  footer .dot{margin:0 6px;opacity:.5;}
+</style>
 </head>
 <body>
-  <h1>Privacy Policy for Daybreak</h1>
-  <p><strong>Effective date:</strong> June 1, 2026</p>
-
-  <p>Daybreak ("the app," "we," "us") is a focus and screen-time app. This policy explains what data the app accesses, why, and how it is handled. Our core principle is that your personal usage data stays on your device, with the limited exceptions described below for crash reporting and advertising.</p>
-
-  <h2>Data We Collect</h2>
-  <p>Daybreak does not have user accounts, and it does not collect, store, or upload your app-usage history, blocking schedules, or settings to any server. That information remains on your device. The exceptions are anonymous crash data and advertising data, described in the sections below.</p>
-
-  <h2>Permissions We Use and Why</h2>
-  <ul>
-    <li><strong>Usage Access:</strong> Daybreak reads which app is currently in the foreground so it can detect when you open an app you've chosen to block during a scheduled window. This is processed entirely on your device and is never transmitted off it.</li>
-    <li><strong>Accessibility Service:</strong> Daybreak uses the Accessibility Service to enforce blocking — for example, to display the block/shield screen over a distracting app. It is used solely for this blocking function and does not read, store, or share the content of your screen.</li>
-    <li><strong>Notifications:</strong> Daybreak sends notifications to inform you about active blocking windows and related app status. These are generated locally on your device.</li>
-  </ul>
-
-  <h2>Advertising</h2>
-  <p>Daybreak displays advertisements through Google AdMob. To serve ads, AdMob may collect and process certain data, including a device advertising identifier, IP address, and information about your interactions with ads. This data is collected by Google in accordance with its own policies and may be used to provide personalized or non-personalized advertising. You can learn how Google uses this data at <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a>, and you can manage your advertising identifier in your device settings.</p>
-
-  <h2>Crash Reporting</h2>
-  <p>To keep the app stable, Daybreak uses Firebase Crashlytics (a Google service) to collect anonymous crash and diagnostic data when the app stops unexpectedly. This may include the device model, operating system version, and technical details about the crash. It does not include the personal usage data described above, and it is not used to identify you. Firebase Crashlytics is governed by Google's Privacy Policy at <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.</p>
-
-  <h2>Data Sharing</h2>
-  <p>We do not sell or rent your personal data. Data is shared only with Google as needed to provide advertising (AdMob) and crash reporting (Firebase Crashlytics), as described above. We do not share your on-device usage history, schedules, or settings with anyone.</p>
-
-  <h2>Children's Privacy</h2>
-  <p>Daybreak is not directed at children under 13 and does not knowingly collect personal information from them.</p>
-
-  <h2>Changes to This Policy</h2>
-  <p>We may update this policy from time to time. Any changes will be posted on this page with an updated effective date.</p>
-
-  <h2>Contact</h2>
-  <p>If you have questions about this policy, contact us at: <strong>KinglerApps@gmail.com</strong></p>
-</body>
-</html>
+  <header class="hero">
+    <div class="sun" aria-hidden="true"></div>
+    <h1>Privacy Policy</h1>
+    <div class="sub">Daybreak — Focus &amp; Screen Time</div>
+    <div class="badge">Your data stays on your device</div>
+  </header>
+  <main>
+    <p class="updated">Effective date: June 1, 2026</p>
+    <div class="intro">
+      Daybreak (“the app,” “we,” “us”) is a focus and screen-time app. This policy explains what the app accesses, why, and how it’s handled. Our core principle: <strong>your personal usage data stays on your device</strong>, with the limited exceptions below for advertising and crash reporting.
+    </div>
+    <div class="keypoints">
+      <h2>Key Points</h2>
+      <ul>
+        <li><span class="ic">📱</span><span>Your usage history, schedules, and settings stay on your device — we never upload them.</span></li>
+        <li><span class="ic">📢</span><span>We show ads via Google AdMob, which collects your advertising ID and ad-interaction data.</span></li>
+        <li><span class="ic">🛠️</span><span>We use Firebase Crashlytics to collect anonymous crash data so we can fix bugs.</span></li>
+        <li><span class="ic">🚫</span><span>We never sell or rent your data, and there are no user accounts.</span></li>
+      </ul>
+    </div>
+    <section>
+      <h2>Data We Collect</h2>
+      <p>Daybreak has no user accounts. It does not collect, store, or upload your app-usage history, blocking schedules, or settings to any server — that information stays on your device. The only exceptions are advertising data and anonymous crash data, described below.</p>
+    </section>
+    <section>
+      <h2>Permissions We Use</h2>
+      <ul class="perm">
+        <li>
+          <span class="t">Usage Access</span>
+          <span class="d">Lets Daybreak see which app is currently open, so it can detect when you launch an app you’ve chosen to block during a scheduled window. Processed entirely on-device and never transmitted.</span>
+        </li>
+        <li>
+          <span class="t">Accessibility Service</span>
+          <span class="d">Used to enforce blocking — for example, showing the block/shield screen over a distracting app. Used solely for blocking; it does not read, store, or share your screen content.</span>
+        </li>
+        <li>
+          <span class="t">Notifications</span>
+          <span class="d">Used to inform you about active blocking windows and app status. Generated locally on your device.</span>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Advertising</h2>
+      <p>Daybreak displays ads through Google AdMob. To serve ads, AdMob may collect and process a device advertising identifier, IP address, and information about your interactions with ads. This data is collected by Google under its own policies and may be used for personalized or non-personalized advertising.</p>
+      <p>Learn how Google uses this data at <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>. You can reset or limit your advertising identifier in your device settings.</p>
+    </section>
+    <section>
+      <h2>Crash Reporting</h2>
+      <p>Daybreak uses Firebase Crashlytics (a Google service) to collect anonymous crash and diagnostic data when the app stops unexpectedly. This may include device model, OS version, and technical crash details. It does not include the on-device usage data above and is not used to identify you.</p>
+      <p>Governed by Google’s Privacy Policy at <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
+    </section>
+    <section>
+      <h2>Data Sharing</h2>
+      <p>We do not sell or rent your personal data. Data is shared only with Google as needed to provide advertising (AdMob) and crash reporting (Firebase Crashlytics). We never share your on-device usage history, schedules, or settings with anyone.</p>
+    </section>
+    <section>
+      <h2>Your Rights &amp; Choices</h2>
+      <p>Because Daybreak stores your usage data only on your device, you stay in full control of it:</p>
+      <p>• <strong>Advertising ID:</strong> You can reset or delete your advertising identifier, or opt out of personalized ads, in your device’s settings (Settings → Google → Ads, on most Android devices).</p>
+      <p>• <strong>On-device data:</strong> Uninstalling Daybreak removes all of its locally stored data from your device.</p>
+      <p>• <strong>Permissions:</strong> You can revoke Usage Access, the Accessibility Service, or Notifications at any time in your device settings (note that blocking features depend on them).</p>
+      <p>• <strong>Regional rights:</strong> Depending on where you live (for example, under the GDPR or CCPA), you may have rights to access, correct, or delete personal data. Since we hold no personal data on our servers, requests about advertising or crash data should be directed to Google, or you can contact us using the details below.</p>
+    </section>
+    <section>
+      <h2>Children’s Privacy</h2>
+      <p>Daybreak is not directed at children under
