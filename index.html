@@ -107,62 +107,80 @@
     <div class="badge">Your data stays on your device</div>
   </header>
   <main>
-    <p class="updated">Effective date: June 1, 2026</p>
+    <p class="updated">Effective date: June 15, 2026</p>
     <div class="intro">
-      Daybreak (“the app,” “we,” “us”) is a focus and screen-time app. This policy explains what the app accesses, why, and how it’s handled. Our core principle: <strong>your personal usage data stays on your device</strong>, with the limited exceptions below for advertising and crash reporting.
+      Daybreak (“the app,” “we,” “us”) is a focus and screen-time app provided by KinglerApps. This policy explains what the app accesses, why, and how it’s handled. Our core principle: <strong>your personal usage data stays on your device</strong>, with the limited exception below for anonymous crash and diagnostic reporting.
     </div>
     <div class="keypoints">
       <h2>Key Points</h2>
       <ul>
-        <li><span class="ic">📱</span><span>Your usage history, schedules, and settings stay on your device — we never upload them.</span></li>
-        <li><span class="ic">📢</span><span>We show ads via Google AdMob, which collects your advertising ID and ad-interaction data.</span></li>
-        <li><span class="ic">🛠️</span><span>We use Firebase Crashlytics to collect anonymous crash data so we can fix bugs.</span></li>
-        <li><span class="ic">🚫</span><span>We never sell or rent your data, and there are no user accounts.</span></li>
+        <li><span class="ic">📱</span><span>Your usage history, schedules, blocked-app choices, and settings stay on your device — we never upload them.</span></li>
+        <li><span class="ic">🚫</span><span>Daybreak shows no third-party ads and contains no advertising SDKs serving ads to you.</span></li>
+        <li><span class="ic">🛠️</span><span>We use Google Firebase to collect anonymous crash &amp; basic usage data so we can fix bugs and improve the app.</span></li>
+        <li><span class="ic">🔑</span><span>No user accounts. We never sell or rent your data.</span></li>
       </ul>
     </div>
     <section>
       <h2>Data We Collect</h2>
-      <p>Daybreak has no user accounts. It does not collect, store, or upload your app-usage history, blocking schedules, or settings to any server — that information stays on your device. The only exceptions are advertising data and anonymous crash data, described below.</p>
+      <p>Daybreak has no user accounts. It does not collect, store, or upload your app-usage history, focus windows, daily limits, blocked-app choices, or settings to any server — that information stays on your device (and is stored encrypted on it). The only data sent off your device is the anonymous diagnostic and analytics data described below.</p>
+      <p>Purchases of Daybreak Pro are handled by Google Play. We do not receive or store your payment details; Google may provide us anonymised purchase status so the app can unlock Pro features.</p>
     </section>
     <section>
       <h2>Permissions We Use</h2>
       <ul class="perm">
         <li>
-          <span class="t">Usage Access</span>
-          <span class="d">Lets Daybreak see which app is currently open, so it can detect when you launch an app you’ve chosen to block during a scheduled window. Processed entirely on-device and never transmitted.</span>
+          <span class="t">Accessibility Service</span>
+          <span class="d">Detects which app is currently in the foreground so Daybreak can show the focus shield over an app you’ve chosen to block. It is used solely for this purpose and never reads, stores, or shares your screen content, text, keystrokes, or passwords (content retrieval is disabled).</span>
         </li>
         <li>
-          <span class="t">Accessibility Service</span>
-          <span class="d">Used to enforce blocking — for example, showing the block/shield screen over a distracting app. Used solely for blocking; it does not read, store, or share your screen content.</span>
+          <span class="t">Usage Access</span>
+          <span class="d">Lets Daybreak read Android’s screen-time statistics to show your usage insights and to enforce daily usage limits. Processed entirely on-device and never transmitted by us.</span>
         </li>
         <li>
           <span class="t">Notifications</span>
-          <span class="d">Used to inform you about active blocking windows and app status. Generated locally on your device.</span>
+          <span class="d">Used to remind you when a focus window or override is ending. Generated locally on your device.</span>
+        </li>
+        <li>
+          <span class="t">Exact Alarms</span>
+          <span class="d">Lets your focus windows start and end on time. Used only for scheduling; involves no data collection.</span>
         </li>
       </ul>
     </section>
     <section>
-      <h2>Advertising</h2>
-      <p>Daybreak displays ads through Google AdMob. To serve ads, AdMob may collect and process a device advertising identifier, IP address, and information about your interactions with ads. This data is collected by Google under its own policies and may be used for personalized or non-personalized advertising.</p>
-      <p>Learn how Google uses this data at <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>. You can reset or limit your advertising identifier in your device settings.</p>
-    </section>
-    <section>
-      <h2>Crash Reporting</h2>
-      <p>Daybreak uses Firebase Crashlytics (a Google service) to collect anonymous crash and diagnostic data when the app stops unexpectedly. This may include device model, OS version, and technical crash details. It does not include the on-device usage data above and is not used to identify you.</p>
-      <p>Governed by Google’s Privacy Policy at <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
+      <h2>Diagnostics &amp; Analytics</h2>
+      <p>Daybreak uses Google Firebase to keep the app stable and understand which features are used:</p>
+      <p>• <strong>Firebase Crashlytics</strong> collects anonymous crash and diagnostic data when the app stops unexpectedly (e.g. device model, OS version, and technical crash details).</p>
+      <p>• <strong>Firebase Analytics</strong> collects anonymous, aggregated usage events (e.g. which screens are opened) and an app-instance identifier that is not tied to your real-world identity.</p>
+      <p>This data does not include the on-device usage data above, is not used for advertising, and is not used to identify you. It is processed by Google under its <a href="https://policies.google.com/privacy">Privacy Policy</a>.</p>
     </section>
     <section>
       <h2>Data Sharing</h2>
-      <p>We do not sell or rent your personal data. Data is shared only with Google as needed to provide advertising (AdMob) and crash reporting (Firebase Crashlytics). We never share your on-device usage history, schedules, or settings with anyone.</p>
+      <p>We do not sell or rent your personal data. Data is shared only with Google as a processor, and only as needed to provide crash reporting and analytics (Firebase) and to process subscription purchases (Google Play). We never share your on-device usage history, schedules, blocked-app choices, or settings with anyone.</p>
     </section>
     <section>
       <h2>Your Rights &amp; Choices</h2>
       <p>Because Daybreak stores your usage data only on your device, you stay in full control of it:</p>
-      <p>• <strong>Advertising ID:</strong> You can reset or delete your advertising identifier, or opt out of personalized ads, in your device’s settings (Settings → Google → Ads, on most Android devices).</p>
       <p>• <strong>On-device data:</strong> Uninstalling Daybreak removes all of its locally stored data from your device.</p>
-      <p>• <strong>Permissions:</strong> You can revoke Usage Access, the Accessibility Service, or Notifications at any time in your device settings (note that blocking features depend on them).</p>
-      <p>• <strong>Regional rights:</strong> Depending on where you live (for example, under the GDPR or CCPA), you may have rights to access, correct, or delete personal data. Since we hold no personal data on our servers, requests about advertising or crash data should be directed to Google, or you can contact us using the details below.</p>
+      <p>• <strong>Permissions:</strong> You can revoke the Accessibility Service, Usage Access, Notifications, or Exact Alarms at any time in your device settings (note that blocking and stats features depend on them).</p>
+      <p>• <strong>Analytics:</strong> To request deletion of the anonymous diagnostic/analytics data associated with your device, contact us using the details below.</p>
+      <p>• <strong>Regional rights:</strong> Depending on where you live (for example, under the GDPR or CCPA/CPRA), you may have rights to access, correct, or delete personal data. Since we hold no personal data on our own servers, you can direct such requests to us using the contact details below and we will assist.</p>
     </section>
     <section>
       <h2>Children’s Privacy</h2>
-      <p>Daybreak is not directed at children under
+      <p>Daybreak is not directed at children under 13 (or the minimum age of digital consent in your country), and we do not knowingly collect personal information from children. If you believe a child has provided us information, contact us and we will address it.</p>
+    </section>
+    <section>
+      <h2>Changes to This Policy</h2>
+      <p>We may update this policy as the app evolves. Material changes will be reflected here with a new effective date. Continued use of the app after changes are posted constitutes acceptance of the updated policy.</p>
+    </section>
+    <section>
+      <h2>Contact</h2>
+      <p>Questions about this policy or your data?</p>
+      <a class="pill" href="mailto:KinglerApps@gmail.com">✉️ KinglerApps@gmail.com</a>
+    </section>
+    <footer>
+      © 2026 KinglerApps <span class="dot">•</span> Daybreak
+    </footer>
+  </main>
+</body>
+</html>
